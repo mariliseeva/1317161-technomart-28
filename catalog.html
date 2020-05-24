@@ -12,9 +12,12 @@
       <img src="img/logo-technomart.svg" alt="Техномарт" width="108" height="18">
     </a>
     <section>
-      <!-- Форма поиска-->
       <h3>Поиск</h3>
-      <input type="search">
+      <form method="get" action="https://echo.htmlacademy.ru">
+        <label for="search-field">Поиск:</label>
+        <input type="search" id="search-field" name="search">
+        <button type="submit">Искать</button>
+      </form>
     </section>
 
     <ul>
@@ -75,8 +78,8 @@
 
     <form>
       <h3>Фильтр:</h3>
-      <section>
-        <h4>Цена:</h4>
+      <fieldset>
+        <legend>Цена:</legend>
         <div>
           <input type="range" id="price" name="price" min="0" max="30000">
           <label for="price">цена</label>
@@ -84,24 +87,45 @@
         <input type="text" inputmode="numeric" value="0">
         <span> - </span>
         <input type="text" inputmode="numeric" value="30000">
-      </section>
-      <section>
-        <h4>Производители:</h4>
+      </fieldset>
+      <fieldset>
+        <legend>Производители:</legend>
         <ul>
-          <li>Bosch</li>
-          <li>Интерскол</li>
-          <li>Makita</li>
-          <li>Dewalt</li>
-          <li>Hitachi</li>
+          <li>
+            <input type="checkbox" value="bosch" name="bosch" id="filter-bosch" checked>
+            <label for="filter-bosch">Bosch</label>
+          </li>
+          <li>
+            <input type="checkbox" value="interskol" name="interskol" id="filter-interskol">
+            <label for="filter-interskol">Интерскол</label>
+          </li>
+          <li>
+            <input type="checkbox" value="makita" name="makita" id="filter-makita" checked>
+            <label for="filter-makita">Makita</label>
+          </li>
+          <li>
+            <input type="checkbox" value="dewalt" name="dewalt" id="filter-dewalt">
+            <label for="filter-dewalt">Dewalt</label>
+          </li>
+          <li>
+            <input type="checkbox" value="hitachi" name="hitachi" id="filter-hitachi">
+            <label for="filter-hitachi">Hitachi</label>
+          </li>
         </ul>
-      </section>
-      <section>
-        <h4>Питание:</h4>
+      </fieldset>
+      <fieldset>
+        <legend>Питание:</legend>
         <ul>
-          <li>Аккумуляторные</li>
-          <li>Сетевые</li>
+          <li>
+            <input type="radio" name="filter-supply" id="filter-battery" value="battery" checked>
+            <label for="filter-battery">Аккумуляторные</label>
+          </li>
+          <li>
+            <input type="radio" name="filter-supply" id="filter-electronetwork" value="electronetwork">
+            <label for="filter-electronetwork">Сетевые</label>
+          </li>
         </ul>
-      </section>
+      </fieldset>
 
       <button type="submit">Показать</button>
     </form>
@@ -141,7 +165,7 @@
         <li>
           <article>
             <a href="blank.html">
-              <img src="img/catalog/catalog-item.jpg" alt="Перфоратор BOSCH BFG 9000" width="127" height="112">
+              <img src="img/catalog/catalog-item1.jpg" alt="Перфоратор BOSCH BFG 9000" width="127" height="112">
             </a>
             <div>
               <a href="blank.html">Купить</a>
@@ -198,7 +222,7 @@
         <li>
           <article>
             <a href="blank.html">
-              <img src="img/catalog/catalog-item.jpg" alt="Перфоратор BOSCH BFG 9000" width="127" height="112">
+              <img src="img/catalog/catalog-item1.jpg" alt="Перфоратор BOSCH BFG 9000" width="127" height="112">
             </a>
             <div>
               <a href="blank.html">Купить</a>
@@ -255,7 +279,7 @@
         <li>
           <article>
             <a href="blank.html">
-              <img src="img/catalog/catalog-item.jpg" alt="Перфоратор BOSCH BFG 9000" width="127" height="112">
+              <img src="img/catalog/catalog-item1.jpg" alt="Перфоратор BOSCH BFG 9000" width="127" height="112">
             </a>
             <div>
               <a href="blank.html">Купить</a>
@@ -364,6 +388,18 @@
       Разработано:
       <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
   </footer>
+
+  <div>
+    <section>
+      <h2>Корзина</h2>
+      <p>Товар добавлен в корзину!</p>
+      <div>
+        <button type="button">Оформить заказ</button>
+        <button type="button">Продолжить покупки</button>
+      </div>
+      <button type="button">Закрыть</button>
+    </section>
+  </div>
 </body>
 
 </html>
