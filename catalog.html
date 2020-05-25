@@ -12,7 +12,7 @@
       <img src="img/logo-technomart.svg" alt="Техномарт" width="108" height="18">
     </a>
     <section>
-      <h3>Поиск</h3>
+      <h3 class="visually-hidden">Поиск</h3>
       <form method="get" action="https://echo.htmlacademy.ru">
         <label for="search-field">Поиск:</label>
         <input type="search" id="search-field" name="search">
@@ -76,7 +76,7 @@
 
     <h1>Перфораторы</h1>
 
-    <form>
+    <form method="get" action="https://echo.htmlacademy.ru">
       <h3>Фильтр:</h3>
       <fieldset>
         <legend>Цена:</legend>
@@ -134,11 +134,11 @@
       <div>
         <p>Cортировка:</p>
         <ul>
-          <li><button type="button">По цене</button></li>
-          <li><button type="button">По типу</button></li>
-          <li><button type="button">По функционалу</button></li>
-          <li><button type="button">Показывать по возрастанию</button></li>
-          <li><button type="button">Показывать по убыванию</button></li>
+          <li><a href="blank.html">По цене</a></li>
+          <li><a href="blank.html">По типу</a></li>
+          <li><a href="blank.html">По функционалу</a></li>
+          <li><a href="blank.html" aria-label="Показывать по возрастанию"></a></li>
+          <li><a href="blank.html" aria-label="Показывать по убыванию"></a></li>
         </ul>
       </div>
 
@@ -315,13 +315,15 @@
         </li>
       </ul>
 
-      <ul>
-        <li><a href="#">Предыдущая</a></li>
-        <li><a>1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">Следующая</a></li>
-      </ul>
+      <nav role="pagination" aria-label="Навигация по страницам каталога">
+        <ul>
+          <li><a href="#">Предыдущая</a></li>
+          <li><a>1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">Следующая</a></li>
+        </ul>
+      </nav>
     </div>
 
     <article>
@@ -338,7 +340,7 @@
     </a>
 
     <section>
-      <h4>Контакты</h4>
+      <h4 class="visually-hidden">Контакты</h4>
       <address>
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
         <a href="tel:+78125550555">+7(812) 555-05-55</a>
@@ -346,7 +348,7 @@
     </section>
 
     <section>
-      <h4>Дополнительная навигация</h4>
+      <h4 class="visually-hidden">Дополнительная навигация</h4>
 
       <nav>
         <ul>
@@ -372,11 +374,23 @@
     </p>
 
     <section>
-      <h4>Давайте дружить</h4>
+      <h4 class="visually-hidden">Давайте дружить</h4>
       <ul>
-        <li><a href="#">Вконтакте</a></li>
-        <li><a href="#">Фейсбук</a></li>
-        <li><a href="#">Инстаграм</a></li>
+        <li>
+          <a href="#">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
+        </li>
       </ul>
     </section>
 
@@ -386,18 +400,19 @@
     </p>
     <p>
       Разработано:
-      <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a></p>
+      <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+    </p>
   </footer>
 
   <div>
     <section>
-      <h2>Корзина</h2>
+      <h2 class="visually-hidden">Корзина</h2>
       <p>Товар добавлен в корзину!</p>
       <div>
-        <button type="button">Оформить заказ</button>
+        <a href="blank.html">Оформить заказ</a>
         <button type="button">Продолжить покупки</button>
       </div>
-      <button type="button">Закрыть</button>
+      <button type="button" aria-label="Закрыть"></button>
     </section>
   </div>
 </body>
