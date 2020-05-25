@@ -80,13 +80,25 @@
       <h3>Фильтр:</h3>
       <fieldset>
         <legend>Цена:</legend>
-        <div>
-          <input type="range" id="price" name="price" min="0" max="30000">
-          <label for="price">цена</label>
-        </div>
-        <input type="text" inputmode="numeric" value="0">
-        <span> - </span>
-        <input type="text" inputmode="numeric" value="30000">
+        <div class="range">
+          <div>
+            <button type="button" aria-label="цена от"></button>
+            <button type="button" aria-label="цена до"></button>
+            <div>
+              <div></div>
+            </div>
+            <div>
+              <div>
+                <div>
+                  <label for="price-min" class="visually-hidden">От</label>
+                  <input id="price-min" type="text" value="0">
+                </div>
+                <div>
+                  <label for="price-max" class="visually-hidden">До</label>
+                  <input id="price-max" type="text" value="300">
+                </div>
+              </div>
+            </div>
       </fieldset>
       <fieldset>
         <legend>Производители:</legend>
@@ -404,17 +416,16 @@
     </p>
   </footer>
 
-  <div>
-    <section>
-      <h2 class="visually-hidden">Корзина</h2>
-      <p>Товар добавлен в корзину!</p>
-      <div>
-        <a href="blank.html">Оформить заказ</a>
-        <button type="button">Продолжить покупки</button>
-      </div>
-      <button type="button" aria-label="Закрыть"></button>
-    </section>
-  </div>
+  <section>
+    <h2 class="visually-hidden">Корзина</h2>
+    <p>Товар добавлен в корзину!</p>
+    <div>
+      <a href="blank.html">Оформить заказ</a>
+      <button type="button">Продолжить покупки</button>
+    </div>
+    <button type="button" aria-label="Закрыть"></button>
+  </section>
+
 </body>
 
 </html>
