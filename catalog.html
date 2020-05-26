@@ -87,40 +87,40 @@
             <div>
               <div></div>
             </div>
+          </div>
+          <div>
             <div>
-              <div>
-                <div>
-                  <label for="price-min" class="visually-hidden">От</label>
-                  <input id="price-min" type="text" value="0">
-                </div>
-                <div>
-                  <label for="price-max" class="visually-hidden">До</label>
-                  <input id="price-max" type="text" value="300">
-                </div>
-              </div>
+              <label for="price-min" class="visually-hidden">От</label>
+              <input id="price-min" type="text" value="0">
             </div>
+            <div>
+              <label for="price-max" class="visually-hidden">До</label>
+              <input id="price-max" type="text" value="300">
+            </div>
+          </div>
+        </div>
       </fieldset>
       <fieldset>
         <legend>Производители:</legend>
         <ul>
           <li>
-            <input type="checkbox" value="bosch" name="bosch" id="filter-bosch" checked>
+            <input type="checkbox" value="bosch" name="manufacturer" id="filter-bosch" checked>
             <label for="filter-bosch">Bosch</label>
           </li>
           <li>
-            <input type="checkbox" value="interskol" name="interskol" id="filter-interskol">
+            <input type="checkbox" value="interskol" name="manufacturer" id="filter-interskol">
             <label for="filter-interskol">Интерскол</label>
           </li>
           <li>
-            <input type="checkbox" value="makita" name="makita" id="filter-makita" checked>
+            <input type="checkbox" value="makita" name="manufacturer" id="filter-makita" checked>
             <label for="filter-makita">Makita</label>
           </li>
           <li>
-            <input type="checkbox" value="dewalt" name="dewalt" id="filter-dewalt">
+            <input type="checkbox" value="dewalt" name="manufacturer" id="filter-dewalt">
             <label for="filter-dewalt">Dewalt</label>
           </li>
           <li>
-            <input type="checkbox" value="hitachi" name="hitachi" id="filter-hitachi">
+            <input type="checkbox" value="hitachi" name="manufacturer" id="filter-hitachi">
             <label for="filter-hitachi">Hitachi</label>
           </li>
         </ul>
@@ -162,7 +162,7 @@
             </a>
             <div>
               <a href="blank.html">Купить</a>
-              <a href="blank.html">В закладки</a>
+              <button type="button">В закладки</button>
             </div>
             <h3>
               <a href="blank.html">
@@ -181,7 +181,7 @@
             </a>
             <div>
               <a href="blank.html">Купить</a>
-              <a href="blank.html">В закладки</a>
+              <button type="button">В закладки</button>
             </div>
             <h3>
               <a href="blank.html">
@@ -200,7 +200,7 @@
             </a>
             <div>
               <a href="blank.html">Купить</a>
-              <a href="blank.html">В закладки</a>
+              <button type="button">В закладки</button>
             </div>
             <h3>
               <a href="blank.html">
@@ -219,7 +219,7 @@
             </a>
             <div>
               <a href="blank.html">Купить</a>
-              <a href="blank.html">В закладки</a>
+              <button type="button">В закладки</button>
             </div>
             <h3>
               <a href="blank.html">
@@ -238,7 +238,7 @@
             </a>
             <div>
               <a href="blank.html">Купить</a>
-              <a href="blank.html">В закладки</a>
+              <button type="button">В закладки</button>
             </div>
             <h3>
               <a href="blank.html">
@@ -257,7 +257,7 @@
             </a>
             <div>
               <a href="blank.html">Купить</a>
-              <a href="blank.html">В закладки</a>
+              <button type="button">В закладки</button>
             </div>
             <h3>
               <a href="blank.html">
@@ -276,7 +276,7 @@
             </a>
             <div>
               <a href="blank.html">Купить</a>
-              <a href="blank.html">В закладки</a>
+              <button type="button">В закладки</button>
             </div>
             <h3>
               <a href="blank.html">
@@ -295,7 +295,7 @@
             </a>
             <div>
               <a href="blank.html">Купить</a>
-              <a href="blank.html">В закладки</a>
+              <button type="button">В закладки</button>
             </div>
             <h3>
               <a href="blank.html">
@@ -314,7 +314,7 @@
             </a>
             <div>
               <a href="blank.html">Купить</a>
-              <a href="blank.html">В закладки</a>
+              <button type="button">В закладки</button>
             </div>
             <h3>
               <a href="blank.html">
@@ -327,15 +327,13 @@
         </li>
       </ul>
 
-      <nav role="pagination" aria-label="Навигация по страницам каталога">
-        <ul>
-          <li><a href="#">Предыдущая</a></li>
-          <li><a>1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">Следующая</a></li>
-        </ul>
-      </nav>
+      <ul role="navigation" aria-label="Навигация по страницам каталога">
+        <li><a href="#">Предыдущая</a></li>
+        <li><a>1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">Следующая</a></li>
+      </ul>
     </div>
 
     <article>
@@ -359,26 +357,22 @@
       </address>
     </section>
 
-    <section>
-      <h4 class="visually-hidden">Дополнительная навигация</h4>
+    <div role="navigation" aria-label="Дополнительная навигация">
+      <ul>
+        <li><a href="blank.html">Компания</a></li>
+        <li><a href="blank.html">Новости</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+        <li><a href="blank.html">Доставка</a></li>
+        <li><a href="blank.html">Контакты</a></li>
+      </ul>
 
-      <nav>
-        <ul>
-          <li><a href="blank.html">Компания</a></li>
-          <li><a href="blank.html">Новости</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="blank.html">Доставка</a></li>
-          <li><a href="blank.html">Контакты</a></li>
-        </ul>
-
-        <ul>
-          <li><a href="blank.html">Материалы</a></li>
-          <li><a href="blank.html">Техника</a></li>
-          <li><a href="blank.html">Инструмент</a></li>
-          <li><a href="blank.html">Спецпредложения</a></li>
-        </ul>
-      </nav>
-    </section>
+      <ul>
+        <li><a href="blank.html">Материалы</a></li>
+        <li><a href="blank.html">Техника</a></li>
+        <li><a href="blank.html">Инструмент</a></li>
+        <li><a href="blank.html">Спецпредложения</a></li>
+      </ul>
+    </div>
 
     <p>
       &copy; 2010-2019 Компания &laquo;Техномарт&raquo;
